@@ -6,5 +6,9 @@ export default function Input() {
     setValor(valor + 1);
   }
   console.log(valor);
-  return <input type="button" value="pressione" onClick={atualiza} />;
+  return (
+    <div>
+      <input type="button" value={`${valor}`} onClick={atualiza} />
+    </div>
+  );
 }
